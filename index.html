@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-cyan-400">
+  <nav class="p-2 bg-white shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl cursor-pointer">
+        <b>Koral</b>
+      </span>
+    </div>
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="capitalize
+      inline-block
+      text-3xl
+      relative
+      cursor-pointer
+      transition-all
+      duration-500
+      before:content-['']
+      before:absolute
+      before:-bottom-2
+      before:left-0
+      before:w-0
+      before:h-1.5
+      before:rounded-full
+      before:opacity-0
+      before:transition-all
+      before:duration-500
+      before:bg-gradient-to-r
+      before:from-gray-600
+      before:via-slate-400
+      before:to-zinc-500
+      hover:before:w-full
+      hover:before:opacity-100">
+      <div class="container flex justify-center mx-auto">
+        <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+            <!-- Dropdown toggle button -->
+            <button @mouseover="open = true" class="flex items-center block p-2 bg-white bg-gray-100 rounded-md ">
+                <span class="mr-0">HOME</span>
+                <svg class="w-0 h-0 text-white text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div x-show="open"
+            x-transition:enter.duration.500ms
+            x-transition:leave.duration.800ms
+            class="absolute right-0 w-48 py-2 mt-2 bg-white bg-gray-100 rounded-md shadow-xl">
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Home page 1
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Home page 2
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Home page 3
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Home page 4
+                </a>
+            </div>
+        </div>
+    </div>
+      </li>
+      &nbsp;&nbsp;
+      <li class=" capitalize
+      inline-block
+      text-3xl
+      relative
+      cursor-pointer
+      transition-all
+      duration-500
+      before:content-['']
+      before:absolute
+      before:-bottom-2
+      before:left-0
+      before:w-0
+      before:h-1.5
+      before:rounded-full
+      before:opacity-0
+      before:transition-all
+      before:duration-500
+      before:bg-gradient-to-r
+       before:from-gray-600
+       before:via-slate-400
+       before:to-zinc-500
+      hover:before:w-full
+      hover:before:opacity-100">
+      <div class="container flex justify-center mx-auto">
+        <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+            <!-- Dropdown toggle button -->
+            <button @mouseover="open = true" class="flex items-center block p-2 bg-white bg-gray-100 rounded-md ">
+                <span class="mr-0">PAGES</span>
+                <svg class="w-0 h-0 text-white text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div x-show="open"
+            x-transition:enter.duration.500ms
+            x-transition:leave.duration.800ms
+            class="absolute right-0 w-48 py-2 mt-2 bg-white bg-gray-100 rounded-md shadow-xl">
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    About vs 1
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    About vs 2
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    About vs 3
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    About vs 4
+                </a>
+            </div>
+        </div>
+    </div>
+      </li>
+      &nbsp;&nbsp;
+      <li class=" capitalize
+      inline-block
+      text-3xl
+      relative
+      cursor-pointer
+      transition-all
+      duration-500
+      before:content-['']
+      before:absolute
+      before:-bottom-2
+      before:left-0
+      before:w-0
+      before:h-1.5
+      before:rounded-full
+      before:opacity-0
+      before:transition-all
+      before:duration-500
+      before:bg-gradient-to-r
+       before:from-gray-600
+       before:via-slate-400
+       before:to-zinc-500
+      hover:before:w-full
+      hover:before:opacity-100">
+      <div class="container flex justify-center mx-auto">
+        <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+            <!-- Dropdown toggle button -->
+            <button @mouseover="open = true" class="flex items-center block p-2 bg-white bg-gray-100 rounded-md ">
+                <span class="mr-0">PORTFOLIOS</span>
+                <svg class="w-0 h-0 text-white text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div x-show="open"
+            x-transition:enter.duration.500ms
+            x-transition:leave.duration.800ms
+            class="absolute right-0 w-48 py-2 mt-2 bg-white bg-gray-100 rounded-md shadow-xl">
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Masonry no Gap Wide 1
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Masonry no Gap Wide 2
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Masonry no Gap Wide 3
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Masonry no Gap Wide 4
+                </a>
+            </div>
+        </div>
+    </div>
+      </li>
+      &nbsp;&nbsp;
+      <li class=" capitalize
+      inline-block
+      text-3xl
+      relative
+      cursor-pointer
+      transition-all
+      duration-500
+      before:content-['']
+      before:absolute
+      before:-bottom-2
+      before:left-0
+      before:w-0
+      before:h-1.5
+      before:rounded-full
+      before:opacity-0
+      before:transition-all
+      before:duration-500
+      before:bg-gradient-to-r
+       before:from-gray-600
+       before:via-slate-400
+       before:to-zinc-500
+      hover:before:w-full
+      hover:before:opacity-100">
+      <div class="container flex justify-center mx-auto">
+        <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+            <!-- Dropdown toggle button -->
+            <button @mouseover="open = true" class="flex items-center block p-2 bg-white bg-gray-100 rounded-md ">
+                <span class="mr-0">HEADERS</span>
+                <svg class="w-0 h-0 text-white text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div x-show="open"
+            x-transition:enter.duration.500ms
+            x-transition:leave.duration.800ms
+            class="absolute right-0 w-48 py-2 mt-2 bg-white bg-gray-100 rounded-md shadow-xl">
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Latest Projects 1
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Latest Projects 2
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Latest Projects 3
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Latest Projects 4
+                </a>
+            </div>
+        </div>
+    </div>
+      </li>
+      &nbsp;&nbsp;
+      <li class=" capitalize
+      inline-block
+      text-3xl
+      relative
+      cursor-pointer
+      transition-all
+      duration-500
+      before:content-['']
+      before:absolute
+      before:-bottom-2
+      before:left-0
+      before:w-0
+      before:h-1.5
+      before:rounded-full
+      before:opacity-0
+      before:transition-all
+      before:duration-500
+      before:bg-gradient-to-r
+       before:from-gray-600
+       before:via-slate-400
+       before:to-zinc-500
+      hover:before:w-full
+      hover:before:opacity-100">
+      <div class="container flex justify-center mx-auto">
+        <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+            <!-- Dropdown toggle button -->
+            <button @mouseover="open = true" class="flex items-center block p-2 bg-white bg-gray-100 rounded-md ">
+                <span class="mr-0">ELEMENTS</span>
+                <svg class="w-0 h-0 text-white text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div x-show="open"
+            x-transition:enter.duration.500ms
+            x-transition:leave.duration.800ms
+            class="absolute right-0 w-48 py-2 mt-2 bg-white bg-gray-100 rounded-md shadow-xl">
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Blank Template 1
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Blank Template 2
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Blank Template 3
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Blank Template 4
+                </a>
+            </div>
+        </div>
+    </div>
+       </li>
+       &nbsp;&nbsp;
+       <li class=" capitalize
+      inline-block
+      text-3xl
+      relative
+      cursor-pointer
+      transition-all
+      duration-500
+      before:content-['']
+      before:absolute
+      before:-bottom-2
+      before:left-0
+      before:w-0
+      before:h-1.5
+      before:rounded-full
+      before:opacity-0
+      before:transition-all
+      before:duration-500
+      before:bg-gradient-to-r
+       before:from-gray-600
+       before:via-slate-400
+       before:to-zinc-500
+      hover:before:w-full
+      hover:before:opacity-100">
+      <div class="container flex justify-center mx-auto">
+        <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+            <!-- Dropdown toggle button -->
+            <button @mouseover="open = true" class="flex items-center block p-2 bg-white bg-gray-100 rounded-md ">
+                <span class="mr-0">BLOG</span>
+                <svg class="w-0 h-0 text-white text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div x-show="open"
+            x-transition:enter.duration.500ms
+            x-transition:leave.duration.800ms
+            class="absolute right-0 w-48 py-2 mt-2 bg-white bg-gray-100 rounded-md shadow-xl">
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Blog 1
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Blog 2
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Blog 3
+                </a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                    Blog 4
+                </a>
+            </div>
+        </div>
+    </div>
+      </li>
+      <!-- This is an example component -->
+     <div class="pt-2 relative mx-auto text-gray-600">
+      <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-8 rounded-lg text-sm focus:outline-none"
+        type="search" name="search" placeholder="Search">
+      <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+        <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+          viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
+          width="512px" height="512px">
+          <path
+            d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+        </svg>
+      </button>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <svg class="flex-1 w-8 h-8 fill-current cursor-pointer" viewbox="0 0 24 24">
+      <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"/>
+      </svg>
+    &nbsp;&nbsp;&nbsp;
+    <div class="space-y-2 cursor-pointer">
+      <div class="w-8 h-0.5 bg-gray-600 hover:bg-green-700"></div>
+      <div class="w-8 h-0.5 bg-gray-600 hover:bg-green-700"></div>
+      <div class="w-8 h-0.5 bg-gray-600 hover:bg-green-700"></div>
+    </div> 
+  </ul>
+  </nav>
+</body>
+
+</html>
